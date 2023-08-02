@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>¡Haz completado <br> <span id="tareas-completadas">0</span> de <span id="tareas-total">0</span> TODO!</h1>
+  </div>
+
+  <div class="centro">
+    <input type="search" class="redondeo" id="buscador"/>
+    <input type="button" value="Buscar" class="buscar" id="boton-buscar">
+  </div>
+
+
+<div class="centros">
+  <ul id="lista-tareas">
+    <li>Ir a bailar<span class="verificar-icon">&#10004;</span>
+      <span class="borrar-icon">&#128465;</span>
+    </li>
+    <li>Jugar gta 5<span class="verificar-icon">&#10004;</span>
+      <span class="borrar-icon">&#128465;</span>
+    </li>
+    <li>sali<span class="verificar-icon">&#10004;</span>
+      <span class="borrar-icon">&#128465;</span>
+    </li>
+    <li>Buscar el perro<span class="verificar-icon">&#10004;</span>
+      <span class="borrar-icon">&#128465;</span>
+    </li>
+    <li>Salir al parque<span class="verificar-icon">&#10004;</span>
+      <span class="borrar-icon">&#128465;</span>
+    </li>
+    <li>Ir a comer<span class="verificar-icon">&#10004;</span>
+      <span class="borrar-icon">&#128465;</span>
+    </li>
+  </ul>
+</div>
+
+  <div class="button-form">
+    <div class="form" id="tarea-form">
+      <input type="text" class="formulario" placeholder="Agregar Tarea">
+      <button class="btn-form" type="button" onclick="addTarea()">Agregar</button>
+      <button class="btn-form" type="button" onclick="cancelForm()">Cancelar</button>
+    </div>
+    <button id="agregar-tareas">+</button>
+  </div>
+
+
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
